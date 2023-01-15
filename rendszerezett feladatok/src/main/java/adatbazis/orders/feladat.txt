@@ -1,0 +1,7 @@
+Készítsd el az Order, OrderService és OrderRepository osztályokat! A megfelelő migrációs állományt neked kell létrehoznod! Ebben a feladatban az adatbázis elérésre vonatkozó részt a tesztekben átírhatod.
+
+Az Order osztály az adatbázis egy sorát fogja reprezentálni. Minden rendelésnél van egy azonosító, egy termék, az, hogy hány darabot rendeltek belőle és a darabonkénti ár. Rendelést lehessen létrehozni azonosítóval vagy anélkül is.
+
+Az OrderRepository osztályban legyen egy saveOrder(Order order) nevű metódus, ami lementi a rendelést az adatbázisba, és visszaadja az adatbázis által generált egyedi azonosítót! Szintén itt legyen egy getOrder() nevű metódus, ami visszaadja az összes rendelést id-val együtt abc sorrendben! Legyen egy getMostExpensiveOrderPrice() nevű metódus, ami vsszaadja a legdrágább rendelés árát! Ez a darabszám és a darabár szorzata. Csak az árat kell visszadnod.
+
+Az OrderService adattagja egy OrderRepository. Legyen lehetőség innen delegálni a kéréseket a repository felé! Továbbá legyen egy metódus, ami lekéri az összes terméket és egy Map adatszerkezetben összeszedi, hogy melyik termékből összesen hány rendelést kell teljesíteni!

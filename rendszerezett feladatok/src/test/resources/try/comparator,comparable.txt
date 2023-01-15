@@ -1,0 +1,4 @@
+ @Override
+    public int compareTo(Article o) {
+        return o.getImportance()-getImportance();
+    }
